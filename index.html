@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Motion Menu</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div id="spectators">
+<h4>Spectators</h4>
+<ul id="specList">
+<li>None</li>
+</ul>
+</div>
+
+<div id="keybinds">
+<h4>Keybinds</h4>
+<p>Open Menu: <span id="menuKey">Not Set</span></p>
+<p>Move UI: Hold X</p>
+</div>
+
+<div id="keybindSetup" class="centerBox">
+<h2>Set Menu Key</h2>
+<p id="pressedKey">Press a key...</p>
+<p class="hint">Press ENTER to confirm</p>
+</div>
+
+<div id="menu">
+
+<img id="banner" src="https://raw.githubusercontent.com/MotionLua/motion-banners/refs/heads/main/theme5.png">
+
+<div id="tabs">
+<div class="tab active">Player</div>
+<div class="tab">Weapon</div>
+<div class="tab">Vehicle</div>
+<div class="tab">Visual</div>
+<div class="tab">Settings</div>
+</div>
+
+<div id="content">
+
+<div class="section active">
+
+<div class="item checkbox">
+<span>God Mode</span>
+<div class="check"></div>
+</div>
+
+<div class="item checkbox">
+<span>Invisible</span>
+<div class="check"></div>
+</div>
+
+<div class="item slider">
+<span>Run Speed</span>
+<div class="sliderBox">
+<button class="left">◀</button>
+<span class="value">1</span>
+<button class="right">▶</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="notifications"></div>
+
+<audio id="notifSound"
+src="https://github.com/MotionLua/notification-sound/raw/refs/heads/main/motion%20sound%20.mp3"></audio>
+
+<script src="motion.js"></script>
+
+</body>
+</html>
